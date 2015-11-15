@@ -1,0 +1,11 @@
+<h1>My first form ever!</h1>
+
+<%= form_tag '/hello', method: :post do %>
+  <div>
+    <%= label_tag :message, 'Put your message in!' %>
+    <%= text_field_tag :message %>
+  </div>
+  <div>
+    <%= submit_tag 'Press this button right now!' %>
+  </div>
+<% end %>

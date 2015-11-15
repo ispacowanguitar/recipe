@@ -1,0 +1,7 @@
+<p> You guessed <%= @guess %> </p>
+
+<% if @guess.to_i == @correct_num %>
+<h1> YOU WERE CORRECT </h1>
+<% else %>
+<h1>NOPE!</h1>
+<% end %>
